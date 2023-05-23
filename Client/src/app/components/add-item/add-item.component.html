@@ -1,0 +1,28 @@
+<div class="container m-5">
+  <h2 class="mb-3">Добавить товар</h2>
+
+  <div class="row">
+    <div class="col-6">
+      <form #form="ngForm" (ngSubmit)="addItem()">
+        <div class="mb-3">
+          <label for="name" class="form-label">Название товара</label>
+          <input type="text" class="form-control" id="name" name="name" [(ngModel)] =
+            "addItemRequest.name">
+        </div>
+        <div class="mb-3">
+          <label for="price" class="form-label">Цена товара</label>
+          <input type="number" class="form-control" id="price" name="price" [(ngModel)]=addItemRequest.price>
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Описание товара</label>
+          <input type="text" class="form-control" id="description" name="description" [(ngModel)]=addItemRequest.description>
+        </div>
+        <div class="mb-3">
+          <label for="img" class="form-label">Ссылка на изображение</label>
+          <input type="text" class="form-control" id="img" name="img" [(ngModel)]=addItemRequest.img>
+        </div>
+        <button type="submit" class="btn btn-primary">Добавить</button>
+      </form>
+    </div>
+  </div>
+</div>

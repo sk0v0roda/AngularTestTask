@@ -1,0 +1,34 @@
+<div class="container">
+  <h2 class="mb-3">Редактировать товар</h2>
+
+  <div class="row">
+    <div class="col-6">
+      <form #form="ngForm" (ngSubmit)="updateItem()">
+        <div class="mb-3">
+          <label for="id" class="form-label">Id</label>
+          <input type="text" class="form-control" id="id" name="id" [(ngModel)] =
+            "itemDetails.id" readonly>
+        </div>
+        <div class="mb-3">
+          <label for="name" class="form-label">Название товара</label>
+          <input type="text" class="form-control" id="name" name="name" [(ngModel)] =
+            "itemDetails.name">
+        </div>
+        <div class="mb-3">
+          <label for="price" class="form-label">Цена товара</label>
+          <input type="number" class="form-control" id="price" name="price" [(ngModel)]=itemDetails.price>
+        </div>
+        <div class="mb-3">
+          <label for="description" class="form-label">Описание товара</label>
+          <input type="text" class="form-control" id="description" name="description" [(ngModel)]=itemDetails.description>
+        </div>
+        <div class="mb-3">
+          <label for="img" class="form-label">Ссылка на изображение</label>
+          <input type="text" class="form-control" id="img" name="img" [(ngModel)]=itemDetails.img>
+        </div>
+        <button type="submit" class="btn btn-primary m-2">Редактировать</button>
+        <button type="button" class="btn btn-danger" (click)="deleteItem(itemDetails.id)">Удалить</button>
+      </form>
+    </div>
+  </div>
+</div>

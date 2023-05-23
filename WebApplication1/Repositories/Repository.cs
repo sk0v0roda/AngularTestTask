@@ -17,6 +17,7 @@ namespace WebApplication1.Repositories
         {
             if (item != null)
             {
+                item.Id = new Guid();
                 await ItemDbContext.Items.AddAsync(item);
                 await ItemDbContext.SaveChangesAsync();
             }
@@ -38,16 +39,20 @@ namespace WebApplication1.Repositories
             return await ItemDbContext.Items.ToListAsync();
         }
 
-        public async Task<Item> Update(Item item)
+        public async Task<Item> Update(Guid id, Item item)
         {
-            var isInDB = await ItemDbContext.Items.AnyAsync(x =>  x.Id == item.Id);
-            if (isInDB)
+            var response = await ItemDbContext.Items.FindAsync(id);
+            if (response != null)
             {
-                ItemDbContext.Items.Update(item);
-                await ItemDbContext.SaveChangesAsync();
-                return item;
+                return null;
             }
-            return null;
+            response.Name = item.Name;
+            response.Price = item.Price;
+            response.Description = item.Description;
+            response.Img = item.Img;
+            await ItemDbContext.SaveChangesAsync();
+
+            return response;
         }
         public async Task<Item> Get(Guid id)
         {

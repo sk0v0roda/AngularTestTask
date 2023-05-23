@@ -25,8 +25,8 @@ namespace WebApplication1.Controllers
         {
             return await repository.GetAll();
         }
-        [HttpGet("{id}")]
-        public async Task<ActionResult<Item>> GetItem(Guid id)
+        [HttpGet("{id: Guid}")]
+        public async Task<ActionResult<Item>> GetItem([FromRoute] Guid id)
         {
             return await repository.Get(id);
         }
@@ -42,10 +42,11 @@ namespace WebApplication1.Controllers
             return await repository.Delete(id);
         }
         [HttpPut]
-        public async Task<ActionResult<Item>> UpdateItem(Item item)
+        [Route("{id: Guid}")]
+        public async Task<ActionResult<Item>> UpdateItem([FromRoute] Guid id, Item item)
         {
-            var result = await repository.Update(item);
-            return result != null ? result : NotFound();
+            var result = await repository.Update(id, item);
+            return result != null ? Ok() : NotFound();
         }
     }
 }
