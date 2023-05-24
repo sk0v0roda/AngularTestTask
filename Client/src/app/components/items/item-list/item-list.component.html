@@ -17,7 +17,7 @@
         <td>{{ item.price }}</td>
         <td>{{ item.description }}</td>
         <td><img src="{{ item.img }}"/></td>
-        <td><a [routerLink]="['edit', item.id]">Редактировать</a></td>
+        <td><a [routerLink]="['/items','edit', item.id]">Редактировать</a></td>
       </tr>
     </tbody>
   </table>

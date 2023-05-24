@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "MMUks/zR8K1oUnzzkz5EQeTC3Xhix3HY7CnNqIgFG+FXWEMOj42ltxlrQl8MFbYn63fwPf34GTNJJ+7q01N9/Q==",
+  "dgSpecHash": "WN/T8SX9msabeW+QKSo2+iCpy3icNH7BwJ2fs0vyR29j7HzCNgcGJjGF92ccCHAPp8fu1jccApFbpp6137rA8g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\admin\\source\\repos\\WebApplication1\\WebApplication1\\WebApi.csproj",
+  "projectFilePath": "C:\\Users\\admin\\Source\\Repos\\AngularTestTask\\WebApplication1\\WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\admin\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\admin\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
