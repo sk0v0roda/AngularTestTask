@@ -42,7 +42,7 @@ namespace WebApplication1.Repositories
         public async Task<Item> Update(Guid id, Item item)
         {
             var response = await ItemDbContext.Items.FindAsync(id);
-            if (response != null)
+            if (response == null)
             {
                 return null;
             }

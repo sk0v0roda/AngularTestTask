@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\admin\\Source\\Repos\\AngularTestTask\\WebApplication1\\WebApi.csproj": {}
+    "C:\\Users\\ponomarev.s\\Documents\\MajorInternTask\\AngularTestTask\\WebApplication1\\WebApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\admin\\Source\\Repos\\AngularTestTask\\WebApplication1\\WebApi.csproj": {
+    "C:\\Users\\ponomarev.s\\Documents\\MajorInternTask\\AngularTestTask\\WebApplication1\\WebApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\admin\\Source\\Repos\\AngularTestTask\\WebApplication1\\WebApi.csproj",
+        "projectUniqueName": "C:\\Users\\ponomarev.s\\Documents\\MajorInternTask\\AngularTestTask\\WebApplication1\\WebApi.csproj",
         "projectName": "WebApi",
-        "projectPath": "C:\\Users\\admin\\Source\\Repos\\AngularTestTask\\WebApplication1\\WebApi.csproj",
-        "packagesPath": "C:\\Users\\admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\admin\\Source\\Repos\\AngularTestTask\\WebApplication1\\obj\\",
+        "projectPath": "C:\\Users\\ponomarev.s\\Documents\\MajorInternTask\\AngularTestTask\\WebApplication1\\WebApi.csproj",
+        "packagesPath": "C:\\Users\\ponomarev.s\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\ponomarev.s\\Documents\\MajorInternTask\\AngularTestTask\\WebApplication1\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\ponomarev.s\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -25,7 +22,8 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\sdk\\7.0.302\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\Program Files\\dotnet\\sdk\\7.0.304\\Sdks\\Microsoft.NET.Sdk.Web\\library-packs": {},
+          "C:\\work\\Gate.Domain.Wrap.Dto": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -74,6 +72,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[6.0.18, 6.0.18]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[6.0.18, 6.0.18]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[6.0.18, 6.0.18]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[6.0.18, 6.0.18]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -82,7 +98,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
         }
       }
     }
